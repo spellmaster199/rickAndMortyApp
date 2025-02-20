@@ -9,6 +9,5 @@ Ez egy webalkalmazás, amely lehetővé teszi a felhasználók számára, hogy b
 
 ## Telepítés és Futatás
 1. **Klónozd a repót**:
-   ```sh
    git clone https://github.com/spellmaster199/rickAndMorty.git
    cd rickAndMorthy
