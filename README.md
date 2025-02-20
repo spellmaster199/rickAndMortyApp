@@ -10,4 +10,7 @@ Ez egy webalkalmazás, amely lehetővé teszi a felhasználók számára, hogy b
 ## Telepítés és Futatás
 1. **Klónozd a repót**:
    git clone https://github.com/spellmaster199/rickAndMorty.git
+2. **Lépj be a mappába**:
    cd rickAndMorthy
+3. **Live Server segítségével indítsd el az index.html fájlt**:
+   rickAndMorthy/index.html
