@@ -1,6 +1,6 @@
 # rickAndMorthy
 
-A PROJECT MÉG KIDOLGOZÁS ALATT ÁLL!
+A PROJECT FEJLESZTÉS ALATT ÁLL, EZ NEM A VÉGLEGES VERZIÓ!
 
 Ez egy webalkalmazás, amely lehetővé teszi a felhasználók számára, hogy böngésszenek a népszerű *Rick and Morty* sorozat karakterei, helyszínei és epizódjai között.
 
