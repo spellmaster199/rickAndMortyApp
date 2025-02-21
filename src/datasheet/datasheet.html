@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:;"> -->
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/res/styles/main.css">
+    <link rel="stylesheet" href="/res/fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"><img src="/res/icons/icons8-rick-sanchez-48.png"
+                    alt="Rick and Morthy"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/characters/characters.html">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/locations/locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/episodes/episodes.html">Episodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container py-2" id="character">
+        <section class="row characterButtons text-center p-1">
+            <!--<div class="col-6 col-md-1">
+                <button id="prevCharacter" class="btn"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="col-0 col-md-10"></div>
+            <div class="col-6 col-md-1">
+                <button id="nextCharacter" class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>-->
+
+            <div class="col-3 col-md-1" id="prevCharacter">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="col-6 col-md-10"></div>
+            <div class="col-3 col-md-1" id="nextCharacter">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </section>
+        <section class="row" id="characterCard">
+            <section class="col-12 col-md-1"></section>
+            <section class="col-12 col-md-4 p-5" id="characterID">
+                <img id="characterImg" class="w-100 rounded-circle">
+                <section class="row">
+                    <section class="col-12 text-center py-3">
+                        <h4 class="h4" id="id"></h4>
+                        <hr>
+                        <h2 class="h2" id="name"><b></b></h2>
+                    </section>
+                </section>
+            </section>
+            <section class="col-12 col-md-2"></section>
+
+            <section class="col-12 col-md-4 pt-5">
+                <section class="characterInfo text-center">
+                    <h5><b>Species</b></h5>
+                    <p id="species"></p>
+                </section>
+                <hr>
+                <section class="characterInfo text-center">
+                    <h5><b>Status</b></h5>
+                    <p id="status"></p>
+                </section>
+                <hr>
+
+                <section class="characterInfo text-center">
+                    <h5><b>Gender</b></h5>
+                    <p id="gender"></p>
+                </section>
+                <hr>
+                <section class="characterInfo text-center">
+                    <h5><b>Origin</b></h5>
+                    <p id="origin"></p>
+                </section>
+                <hr>
+                <section class="characterInfo text-center">
+                    <h5><b>Created</b></h5>
+                    <p id="created"></p>
+                </section>
+            </section>
+            <section class="col-12 col-md-1"></section>
+        </section>
+    </section>
+
+
+    <!-- Fun Fact / Idézet -->
+    <section class="quote-section">
+        <div class="container text-center">
+            <blockquote class="blockquote">
+                <p class="mb-4">"Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch
+                    TV."</p>
+                <footer class="blockquote-footer">Morty Smith</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Wubba lubba dub-dub!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"What, so everyone’s supposed to sleep every single night now? You realize that
+                    nighttime makes up half of all time?"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Sometimes science is more art than science, Morty. Lot of people don’t get that."</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Get Schwifty!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"You gotta get schwifty in here!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"I turned myself into a pickle, Morty! I'm Pickle Rick!"</p>
+                <footer class="blockquote-footer">Pickle Rick</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"I'm sorry, but your opinion means very little to me."</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Rick, when you say you made an exact replica of the house, did you mean you made an
+                    exact replica of the house?"</p>
+                <footer class="blockquote-footer">Morty Smith</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"To live is to risk it all; otherwise, you're just an inert chunk of randomly assembled
+                    molecules drifting wherever the universe blows you."</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Don't think about it. Just have fun!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"I’m not arguing that, I’m just saying—</p>
+                <p class="mb-4">you’re not special."</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"What about the reality where Hitler cured cancer, Morty? The answer is: don't think about it."</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Listen, Morty, I hate to break it to you, but what people call 'love' is just a chemical reaction that compels animals to breed."</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Boom! Big reveal! I turned myself into a pickle!"</p>
+                <footer class="blockquote-footer">Pickle Rick</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Sometimes you gotta get schwifty!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"I just want to say that you’re really great and I know that I’m not programmed to say that, but I do. I love you."</p>
+                <footer class="blockquote-footer">Butter Robot</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Hey, take it easy, Rick! That’s dark!"</p>
+                <footer class="blockquote-footer">Morty Smith</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Summer, next time we're hiding in a cabin during a thunderstorm, let's be more specific!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-4">"You son of a b****, I’m in!"</p>
+                <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+            
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white text-center">
+        <div class="conatiner-fluid">
+            <div class="row">
+                <div class="col-12 pt-5">
+                    <a class="navbar-brand " href="index.html"><img src="/res/icons/icons8-morty-48.png"
+                            alt="Rick and Morthy" class="pb-3"></a>
+                    <h6 class="h6">&copy; Rick and Morty 2025.</h6>
+                    <p class="p">Created by <b>Laszlo Szondi</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pb-4">
+                    <a href="https://github.com/spellmaster199" target="_blank"><i
+                            class="fa-brands fa-github link"></i></a>
+                    <a href="https://www.facebook.com/szondi.laszlo77/" target="_blank"><i
+                            class="fa-brands fa-facebook link"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="datasheet.js"></script>
+    <script src="/src/main.js"></script>
+</body>
+
+</html>
