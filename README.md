@@ -4,7 +4,7 @@ A PROJECT FEJLESZTÉS ALATT ÁLL, EZ NEM A VÉGLEGES VERZIÓ!
 
 Ez egy webalkalmazás, amely lehetővé teszi a felhasználók számára, hogy böngésszenek a népszerű *Rick and Morty* sorozat karakterei, helyszínei és epizódjai között. 
 
-A project a https://rickandmortyapi.com/ oldal adatait használja fel API híváson keresztül. 
+A project a https://rickandmortyapi.com/ oldal adatait használja fel API híváson keresztül. ezen adatok felhasználásával dinamikusan jelennek meg az adatok és áll össze a HTML. 
 Design a Bootstrap 5 keretrenszerével, stíluselemeivel lett felépítve.
 
 ## Főbb Funkciók
