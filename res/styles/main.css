@@ -1,0 +1,317 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'title';
+    src: url(/res/fonts/Rick-and-Morty-Font/get_schwifty.ttf);
+}
+@font-face {
+    font-family: 'text';
+    src: url(/res/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+
+/* Defaults */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'text', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f3f3f3ce;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+/*Layout*/
+
+nav {
+    display: block;
+    position: fixed;
+}
+
+/*#pagination {
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}*/
+
+#pagination {
+    display: block !important;
+    visibility: visible !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40; /* Sötétszürke háttér */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.fixed-pagination {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#welcomer {
+    border-radius: 24px;
+    background-color: #dfdfdfb7;
+}
+
+.card {
+    max-width: 100%;
+    /*max-height: 500px;*/
+    height: 100%;
+    transition: 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex-grow: 1;
+    /* A tartalom kitölti a helyet */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body>ul {
+    list-style: circle;
+}
+
+.card.show {
+    opacity: 0.84;
+    transform: translateY(0);
+}
+
+.card:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.6s ease;
+}
+
+.card>img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-button {
+    margin-top: auto;
+    /* a gomb mindig az aljára kerül */
+    justify-content: end;
+}
+
+#contactSection .row {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+
+#contactSection img:active {
+    transform: translateY(5px);
+}
+
+
+.link {
+    font-size: 2rem;
+    padding: 0 6px;
+    color: #b8b8b8ee;
+    transition: 0.5s ease;
+}
+
+.link:hover {
+    color: #ebebeb;
+    transition: 0.5s ease;
+}
+
+#prevCharacter,
+#nextCharacter {
+    font-size: 160%;
+    border-radius: 25px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+    padding: 5px 0 5px 0;
+    margin: 0;
+}
+
+#prevCharacter:hover,
+#nextCharacter:hover {
+    background-color: #dfdfdfb7;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#prevCharacter:active,
+#nextCharacter:active {
+    background-color: #bdbdbd;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#characterCard {
+    padding: 10px;
+
+}
+
+#characterImg {
+    opacity: 0.9;
+    transition: 0.6s ease;
+    padding: 0;
+}
+
+#characterImg:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.6s ease;
+}
+
+#characterID {
+    transition: 0.6s ease;
+    border-radius: 24px;
+}
+
+#characterID:hover {
+    background-color: #dfdfdfb7;
+    transition: 0.6s ease;
+}
+
+.characterInfo {
+    transition: 0.6s ease;
+    border-radius: 24px;
+    padding: 4px;
+}
+
+.characterInfo:hover {
+    background-color: #dfdfdfb7;
+    transition: 0.6s ease;
+}
+
+#mrMeeseeksBox {
+    width: 80%; /* Az eredeti méret 80%-a, de állíthatsz más értéket */
+    max-width: 300px; /* Maximális szélesség beállítása */
+    display: block; /* Blokk elemként viselkedik, így működik a margin auto */
+    margin: 0 auto; /* Középre igazítás */
+    padding-top: 24px;
+}
+.col-12.col-md-6:last-child {
+    display: flex;
+    justify-content: center; /* Vízszintesen középre */
+    align-items: center; /* Függőlegesen középre */
+}
+
+/* Idézet szekció */
+.quote-section {
+    background-color: #343a40;
+    color: white;
+    padding: 50px 0;
+}
+
+.quote-section blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+/* Text elements */
+
+#title {
+    font-family: 'title';
+    color: #22a2bd;
+    -webkit-text-stroke: 2px #081b38;
+    text-shadow: 0 0 16px #7ffe3f, 0 0 16px #7ffe3f, 0 0 16px #7ffe3f;
+    padding: 40px;
+    font-size: clamp(2rem, 8vw, 5rem);
+    text-align: center !important;
+}
+
+.heading-title-1 {
+    font-family: 'title';
+    color: #22a2bd;
+    -webkit-text-stroke: 2px #081b38;
+    text-shadow: 0 0 16px #7ffe3f, 0 0 16px #7ffe3f, 0 0 16px #7ffe3f;
+    /*font-size: clamp(2rem, 8vw, 5rem);*/
+    text-align: center !important;
+    padding-top: 40px;
+}
+
+.heading-title-2 {
+    font-family: 'title';
+    color: #22a2bd;
+    -webkit-text-stroke: 2px #081b38;
+    text-shadow: 0 0 16px #7ffe3f, 0 0 16px #7ffe3f, 0 0 16px #7ffe3f;
+    /*font-size: clamp(2rem, 8vw, 5rem);*/
+    text-align: center !important;
+}
+
+/*#heading-content {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}*/
+
+
+/* Animations */
+
+/* Idézet animáció (fade-in + slide-in) */
+.quote-section blockquote {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.quote-section blockquote.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Contact */
+.g-recaptcha {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+    .g-recaptcha {
+        transform: scale(0.84);
+        transform-origin: center;
+    }
+}
