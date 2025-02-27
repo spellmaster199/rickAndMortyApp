@@ -27,6 +27,6 @@ A projekt a Rick and Morty API segítségével szerzi be az adatokat, amelyeket 
 - Kedvencek funkció bevezetése
 
 📬 Kapcsolat
-Ha bármilyen kérdésed vagy visszajelzésed van, nyugodtan írj a kapcsolat oldalon keresztül, vagy nyiss egy issue-t a GitHub repóban!
+- Ha bármilyen kérdésed vagy visszajelzésed van, nyugodtan írj a kapcsolat oldalon keresztül, vagy nyiss egy issue-t a GitHub repóban!
 
 Készült rajongóknak, rajongóktól! 🚀
