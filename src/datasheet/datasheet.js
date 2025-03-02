@@ -13,11 +13,11 @@ if (id) {
             return;
         }
 
-        document.title = `Rick and Morthy | ${character.name}`;
+        document.title = `Rick and Morty | ${character.name}`;
         document.getElementById("id").textContent = character.id;
         document.getElementById("name").textContent = character.name;
-        document.getElementById("status").textContent = character.status.charAt(0).toUpperCase() + character.status.slice(1);
         document.getElementById("species").textContent = character.species.charAt(0).toUpperCase() + character.species.slice(1);
+        document.getElementById("status").textContent = character.status.charAt(0).toUpperCase() + character.status.slice(1);
         document.getElementById("gender").textContent = character.gender.charAt(0).toUpperCase() + character.gender.slice(1);
         document.getElementById("origin").textContent = character.origin.name.charAt(0).toUpperCase() + character.origin.name.slice(1);
         document.getElementById("created").textContent = character.created;
