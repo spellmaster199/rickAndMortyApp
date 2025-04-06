@@ -1,32 +1,32 @@
 # rickAndMorthyApp
 
-⚠ FIGYELEM: Ez a projekt fejlesztés alatt áll, még nem a végleges verzió!
+⚠ ATTENTION: This project is under development, not yet the final version!
 
-Ez egy webalkalmazás, amely lehetővé teszi a felhasználók számára, hogy böngésszenek a népszerű *Rick and Morty* sorozat karakterei, helyszínei és epizódjai között. 
+This is a web application that allows users to browse through characters, locations, and episodes of the popular *Rick and Morty* series.
 
-A projekt a Rick and Morty API segítségével szerzi be az adatokat, amelyeket dinamikusan jelenít meg a felhasználói felületen. Az alkalmazás dizájnja a Bootstrap 5 keretrendszerére épül.
+The project uses the Rick and Morty API to retrieve data and dynamically display it in the user interface. The application design is based on the Bootstrap 5 framework.
 
-🌟 Főbb Funkciók
-- **Főoldal**: Bevezetés az oldal tartalmába.
-- **Karakterek böngészése**: Részletes információk minden karakterről, beleértve a nevüket, fajukat, eredetüket és állapotukat.
-- **Lokációk felfedezése**: Az összes helyszín listázása a sorozatból, beleértve a bolygókat és egyéb dimenziókat.
-- **Epizódok megtekintése**: Minden epizód listája, beleértve a címeket, megjelenési dátumokat és a szereplőket.
-- **Kontakt oldal**: Abban az esetben, ha valamilyen hibát észlelsz, itt megírhatod nekem egy rövid űrlap kitöltéssel.
+🌟 Main Functions
+- **Homepage**: Introduction to the content of the site.
+- **Browse Characters**: Detailed information about each character, including their name, race, origin, and status.
+- **Explore Locations**: List of all locations from the series, including planets and other dimensions.
+- **View Episodes**: List of all episodes, including titles, release dates, and cast.
+- **Contact Page**: In case you notice any errors, you can write to me here by filling out a short form.
 
-🚀 Telepítés és futtatás
-1. **Klónozd a repót**:
+🚀 Installation and running
+1. **Clone the repo**:
    git clone https://github.com/spellmaster199/rickAndMortyApp.git
-2. **Lépj be a mappába**:
+2. **Enter the folder**:
    cd rickAndMorthyApp
-3. **Live Server segítségével indítsd el az index.html fájlt**:
+3. **In VSCode, use the Live Server add-on to launch the index.html file**:
    rickAndMorthy/index.html
 
-🔧 Fejlesztési tervek
-- Továbbfejlesztett dizájn és animációk
-- Keresési és szűrési lehetőségek
-- Kedvencek funkció bevezetése
+🔧 Development Plans
+- Improved design and animations
+- Search and filter options
+- Introduction of favorites feature
 
-📬 Kapcsolat
-- Ha bármilyen kérdésed vagy visszajelzésed van, nyugodtan írj a kapcsolat oldalon keresztül, vagy nyiss egy issue-t a GitHub repóban!
+📬 Contact
+- If you have any questions or feedback, feel free to write via the contact page or open an issue in the GitHub repo!
 
-Készült rajongóknak, rajongóktól! 🚀
+Made for fans, by fans! 🚀

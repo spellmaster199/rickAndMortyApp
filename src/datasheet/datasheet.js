@@ -13,23 +13,23 @@ if (id) {
             return;
         }
 
-        document.title = `Rick and Morty | ${character.name}`;
-        document.getElementById("id").textContent = character.id;
-        document.getElementById("name").textContent = character.name;
-        document.getElementById("species").textContent = character.species.charAt(0).toUpperCase() + character.species.slice(1);
-        document.getElementById("status").textContent = character.status.charAt(0).toUpperCase() + character.status.slice(1);
-        document.getElementById("gender").textContent = character.gender.charAt(0).toUpperCase() + character.gender.slice(1);
-        document.getElementById("origin").textContent = character.origin.name.charAt(0).toUpperCase() + character.origin.name.slice(1);
-        document.getElementById("created").textContent = character.created;
-        document.getElementById("characterImg").setAttribute("src", character.image);
+        document.title = `🚀 Rick and Morty | ${character.name}`;
+        document.querySelector("#id").textContent = character.id;
+        document.querySelector("#name").textContent = character.name;
+        document.querySelector("#species").textContent = character.species.charAt(0).toUpperCase() + character.species.slice(1);
+        document.querySelector("#status").textContent = character.status.charAt(0).toUpperCase() + character.status.slice(1);
+        document.querySelector("#gender").textContent = character.gender.charAt(0).toUpperCase() + character.gender.slice(1);
+        document.querySelector("#origin").textContent = character.origin.name.charAt(0).toUpperCase() + character.origin.name.slice(1);
+        document.querySelector("#created").textContent = character.created;
+        document.querySelector("#characterImg").setAttribute("src", character.image);
     
 }).catch(error => {
     console.error("An error occurred while retrieving the character.:", error);
-    document.write("An error occurred while retrieving the character.")
+    document.body.innerHTML = "<h3 style='color: red; text-align: center;'>An error occurred while retrieving character.</h3>";
 });
 } else {
 console.error("No ID in the URL!");
-document.write("No ID in the URL!");
+document.body.innerHTML = "<h3 style='color: red; text-align: center;'>No ID in the URL!</h3>";
 }
 
 

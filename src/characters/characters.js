@@ -116,12 +116,12 @@ fetchCharacters(currentPage).then(data => {
 
         col.appendChild(card);
 
-        document.getElementById("cards").appendChild(col);
+        document.querySelector("#cards").appendChild(col);
     }
     
 }).catch(error => {
     console.error("An error occurred while retrieving characters.:", error);
-    document.write("An error occurred while retrieving characters.")
+    document.body.innerHTML= "<h3 style='color: red; text-align: center;'>An error occurred while retrieving characters.</h3>";
 });
 
 

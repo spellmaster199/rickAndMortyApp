@@ -60,7 +60,7 @@ fetchEpisodes(currentPage).then(data => {
     paginationContainer.appendChild(nextLi);
 
     // Epizódok táblázatának feltöltése
-    const tbody = document.getElementById("trunk");
+    const tbody = document.querySelector("#trunk");
     tbody.innerHTML = "";
 
     data.results.forEach(episode => {
@@ -78,5 +78,5 @@ fetchEpisodes(currentPage).then(data => {
 
 }).catch(error => {
     console.error("An error occurred while retrieving episodes:", error);
-    document.body.innerHTML = "<p style='color: red; text-align: center;'>An error occurred while retrieving episodes.</p>";
+    document.body.innerHTML = "<h3 style='color: red; text-align: center;'>An error occurred while retrieving episodes.</h3>";
 });

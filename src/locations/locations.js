@@ -83,10 +83,10 @@ fetchLocations(currentPage).then(data => {
     tr.appendChild(td5);
     tr.appendChild(td6);
 
-    document.getElementById("torzs").appendChild(tr);
+    document.querySelector("#trunk").appendChild(tr);
 }
     
 }).catch (error => {
     console.error("An error occurred while retrieving locations.:", error);
-    document.write("An error occurred while retrieving locations.")
+    document.body.innerHTML = "<h3 style='color: red; text-align: center;'>An error occurred while retrieving locations.</h3>";
 });

@@ -35,6 +35,7 @@ function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const quoteContainer = document.querySelector(".quote-section .container");
 

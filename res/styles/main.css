@@ -10,6 +10,8 @@
     src: url(/res/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 
+/* ----------------------------------------------------------------- */
+
 
 /* Defaults */
 
@@ -44,6 +46,7 @@ body {
     margin-right: 0 !important;
 }
 
+/* ----------------------------------------------------------------- */
 
 /*Layout*/
 
@@ -55,7 +58,6 @@ nav {
 .nav-link {
     position: relative;
     padding-bottom: 5px;
-    /* Kis térköz az aláhúzás és a szöveg között */
 }
 
 .nav-link::after {
@@ -64,7 +66,6 @@ nav {
     left: 50%;
     bottom: 0;
     width: 40%;
-    /* Csökkentett szélesség */
     height: 2px;
     background-color: transparent;
     transition: background-color 0.3s;
@@ -86,55 +87,37 @@ nav {
     width: 100%;
 }
 
-/* Alapértelmezett (nagy kijelző) */
+/* Default screen (large) */
 @media (min-width: 992px) {
-
-    /* Bootstrap lg breakpoint */
     .navbar-nav {
         flex-direction: row;
-        /* Vízszintes elrendezés */
         justify-content: center;
-        /* Középre igazítás */
         align-items: center;
     }
-
     .navbar .container {
         display: flex;
         justify-content: center;
-        /* Középre igazítás */
         align-items: center;
         position: relative;
-        /* Fontos a pozicionálás */
     }
-
     nav.navbar:first-of-type .navbar-brand {
         position: absolute;
         left: 0;
     }
-
     nav.navbar {
         padding-top: 19px;
         padding-bottom: 19px;
     }
 }
 
-/* Mobilnézet (kisebb kijelzők) */
+/* Mobile view */
 @media (max-width: 991px) {
-
-    /* Bootstrap lg alatt */
     .navbar-nav {
         flex-direction: column;
-        /* Oszlopos elrendezés */
         align-items: center;
-        /* Középre igazítás */
         text-align: center;
-        /* Szövegek középre */
     }
 }
-
-
-
-
 
 #pagination {
     display: block !important;
@@ -147,9 +130,7 @@ nav {
 
 .pagination .page-item .page-link {
     color: #111111;
-    /* Sötétszürke szöveg */
     background-color: #ffffff;
-    /* Világosszürke háttér */
     border-color: #212529;
 }
 .pagination .page-item .page-link:hover {
@@ -163,7 +144,6 @@ nav {
 
 .pagination .page-item.active .page-link {
     background-color: #212529;
-    /* Fekete háttér az aktív oldalnál */
     color: #fff;
     border-color: #212529;
     font-weight: bold;
@@ -171,7 +151,6 @@ nav {
 
 .pagination .page-item.disabled .page-link {
     color: #aaa;
-    /* Halványabb szürke inaktív állapotban */
     background-color: #ffffff;
     border-color: #212529;
     pointer-events: none;
@@ -181,21 +160,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-
-
-/*#pagination {
-    display: block !important;
-    visibility: visible !important;
-    position: fixed;
-    top: 50;
-    left: 50%;
-    width: 100%;
-    background-color: #343a40;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}*/
-
 
 #welcomer {
     border-radius: 24px;
@@ -218,7 +182,6 @@ nav {
 
 .card-body {
     flex-grow: 1;
-    /* A tartalom kitölti a helyet */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -248,7 +211,6 @@ nav {
 
 .card-button {
     margin-top: auto;
-    /* a gomb mindig az aljára kerül */
     justify-content: end;
 }
 
@@ -257,7 +219,6 @@ nav {
     align-items: center;
     min-height: 100%;
 }
-
 #contactSection img:active {
     transform: translateY(5px);
 }
@@ -269,7 +230,6 @@ nav {
     color: #b8b8b8ee;
     transition: 0.5s ease;
 }
-
 .link:hover {
     color: #ebebeb;
     transition: 0.5s ease;
@@ -293,7 +253,6 @@ nav {
     cursor: pointer;
     transition: 0.4s ease;
 }
-
 #prevCharacter:active,
 #nextCharacter:active {
     background-color: #bdbdbd;
@@ -312,7 +271,6 @@ nav {
     transition: 0.6s ease;
     padding: 0;
 }
-
 #characterImg:hover {
     opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -323,7 +281,6 @@ nav {
     transition: 0.6s ease;
     border-radius: 24px;
 }
-
 #characterID:hover {
     background-color: #dfdfdfb7;
     transition: 0.6s ease;
@@ -334,7 +291,6 @@ nav {
     border-radius: 24px;
     padding: 4px;
 }
-
 .characterInfo:hover {
     background-color: #dfdfdfb7;
     transition: 0.6s ease;
@@ -342,25 +298,21 @@ nav {
 
 #mrMeeseeksBox {
     width: 80%;
-    /* Az eredeti méret 80%-a, de állíthatsz más értéket */
     max-width: 300px;
-    /* Maximális szélesség beállítása */
     display: block;
-    /* Blokk elemként viselkedik, így működik a margin auto */
     margin: 0 auto;
-    /* Középre igazítás */
     padding-top: 24px;
 }
 
 .col-12.col-md-6:last-child {
     display: flex;
     justify-content: center;
-    /* Vízszintesen középre */
     align-items: center;
-    /* Függőlegesen középre */
 }
 
-/* Idézet szekció */
+/* ----------------------------------------------------------------- */
+
+/* Quotes section */
 .quote-section {
     background-color: #343a40;
     color: white;
@@ -375,6 +327,7 @@ nav {
     font-style: italic;
 }
 
+/* ----------------------------------------------------------------- */
 
 /* Text elements */
 
@@ -407,15 +360,10 @@ nav {
     text-align: center !important;
 }
 
-/*#heading-content {
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-}*/
-
+/* ----------------------------------------------------------------- */
 
 /* Animations */
 
-/* Idézet animáció (fade-in + slide-in) */
 .quote-section blockquote {
     display: block;
     opacity: 0;
@@ -428,18 +376,4 @@ nav {
     transform: translateY(0);
 }
 
-
-/* Contact */
-.g-recaptcha {
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-@media (max-width: 992px) {
-    .g-recaptcha {
-        transform: scale(0.84);
-        transform-origin: center;
-    }
-}
+/* ----------------------------------------------------------------- */
