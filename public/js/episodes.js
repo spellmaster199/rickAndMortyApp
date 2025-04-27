@@ -83,7 +83,7 @@ fetchEpisodes(currentPage).then(data => {
 
 
 
-import { fetchEpisodes } from "../api.js";
+import { fetchEpisodes } from "./api.js";
 
 
 //*** PAGE ***

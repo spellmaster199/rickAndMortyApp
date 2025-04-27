@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'title';
-    src: url(/res/fonts/Rick-and-Morty-Font/get_schwifty.ttf);
+    src: url(../res/fonts/Rick-and-Morty-Font/get_schwifty.ttf);
 }
 
 @font-face {
     font-family: 'text';
-    src: url(/res/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    src: url(../res/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 
 /* ----------------------------------------------------------------- */

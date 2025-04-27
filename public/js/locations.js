@@ -1,4 +1,4 @@
-import { fetchLocations } from "../api.js";
+import { fetchLocations } from "./api.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 let currentPage = parseInt(urlParams.get("page")) || 1;

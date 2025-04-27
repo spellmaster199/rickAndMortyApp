@@ -1,4 +1,4 @@
-import { fetchCharacters } from "../api.js";
+import { fetchCharacters } from "./api.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 let currentPage = parseInt(urlParams.get("page")) || 1;
@@ -92,8 +92,8 @@ fetchCharacters(currentPage).then(data => {
 
 
         var a = document.createElement("a");
-        a.setAttribute("class", "btn btn-outline-success w-100 card-button");
-        a.setAttribute("href", "http://127.0.0.1:5500/src/datasheet/datasheet.html?id=" + data.results[i].id);
+        a.setAttribute("class", "btn btn-secondary w-100 card-button");
+        a.setAttribute("href", "http://127.0.0.1:5500/public/datasheet.html?id=" + data.results[i].id);
         a.appendChild(document.createTextNode("Find out more »"));
 
         //Kartya osszerakasa
