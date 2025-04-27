@@ -13,7 +13,7 @@ if (id) {
             return;
         }
 
-        document.title = `🚀 Rick and Morty App | ${character.name}`;
+        document.title = `Rick and Morty App | ${character.name}`;
         document.querySelector("#id").textContent = character.id;
         document.querySelector("#name").textContent = character.name;
         document.querySelector("#species").textContent = character.species.charAt(0).toUpperCase() + character.species.slice(1);
