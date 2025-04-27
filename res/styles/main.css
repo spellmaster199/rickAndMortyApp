@@ -346,7 +346,7 @@ nav {
     color: #22a2bd;
     -webkit-text-stroke: 2px #081b38;
     text-shadow: 0 0 16px #7ffe3f, 0 0 16px #7ffe3f, 0 0 16px #7ffe3f;
-    /*font-size: clamp(2rem, 8vw, 5rem);*/
+    font-size: clamp(1rem, 8vw, 4rem);
     text-align: center !important;
     padding-top: 40px;
 }
@@ -356,8 +356,23 @@ nav {
     color: #22a2bd;
     -webkit-text-stroke: 2px #081b38;
     text-shadow: 0 0 16px #7ffe3f, 0 0 16px #7ffe3f, 0 0 16px #7ffe3f;
-    /*font-size: clamp(2rem, 8vw, 5rem);*/
+    font-size: clamp(1rem, 8vw, 3rem);
     text-align: center !important;
+}
+
+@media (max-width: 991px) {
+    #title {
+        -webkit-text-stroke: 1px #081b38;
+        text-shadow: 0 0 6px #7ffe3f, 0 0 6px #7ffe3f, 0 0 6px #7ffe3f;
+    }
+    .heading-title-1 {
+        -webkit-text-stroke: 0.7px #081b38;
+        text-shadow: 0 0 5px #7ffe3f, 0 0 5px #7ffe3f, 0 0 5px #7ffe3f;
+    }
+    .heading-title-2 {
+        -webkit-text-stroke: 0.7px #081b38;
+        text-shadow: 0 0 5px #7ffe3f, 0 0 5px #7ffe3f, 0 0 5px #7ffe3f;
+    }
 }
 
 /* ----------------------------------------------------------------- */
