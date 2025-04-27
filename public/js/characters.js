@@ -93,7 +93,7 @@ fetchCharacters(currentPage).then(data => {
 
         var a = document.createElement("a");
         a.setAttribute("class", "btn btn-secondary w-100 card-button");
-        a.setAttribute("href", "/public/datasheet.html?id=" + data.results[i].id);
+        a.setAttribute("href", "/datasheet.html?id=" + data.results[i].id);
         a.appendChild(document.createTextNode("Find out more »"));
 
         //Kartya osszerakasa
