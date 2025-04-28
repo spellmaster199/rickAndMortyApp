@@ -1,3 +1,12 @@
+/* Root */
+
+:root {
+    --vh: 100%;
+  }  
+
+/* ----------------------------------------------------------------- */
+
+
 /* Fonts */
 
 @font-face {
@@ -34,11 +43,17 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+  }  
+
 body {
     font-family: 'text', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #f3f3f3ce;
+
+    -webkit-overflow-scrolling: touch;
 }
 
 .row {
@@ -49,6 +64,10 @@ body {
 /* ----------------------------------------------------------------- */
 
 /*Layout*/
+
+.main-container {
+    height: calc(var(--vh, 1vh) * 100);
+  }  
 
 nav {
     position: fixed;
