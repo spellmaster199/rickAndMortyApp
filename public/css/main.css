@@ -45,6 +45,8 @@ body {
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    height: auto;
   }  
 
 body {
@@ -53,6 +55,8 @@ body {
     line-height: 1.5;
     background-color: #f3f3f3ce;
     padding-top: 56px;
+    min-height: 100%;
+    height: auto;
 
     -webkit-overflow-scrolling: touch;
 }
