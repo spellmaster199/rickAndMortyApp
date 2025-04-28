@@ -36,11 +36,14 @@ function waitForCharacterCards(observer) {
 
 //Safari viewpoint fill
 function setViewportHeight() {
-    let vh = window.innerHeight * 0.01;
+    const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  
-  window.addEventListener('resize', setViewportHeight);
-  window.addEventListener('orientationchange', setViewportHeight);
-  setViewportHeight();
+
+    // Plusz: mindig újraszámoljuk, ha görgetsz is
+    window.addEventListener('scroll', () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }, { passive: true });
+}
+
   
