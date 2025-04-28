@@ -66,7 +66,7 @@ body {
 /*Layout*/
 
 .main-container {
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
   }  
 
 nav {
