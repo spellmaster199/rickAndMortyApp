@@ -54,12 +54,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: #f3f3f3ce;
-    padding-top: 56px;
+    padding-top: 75px;
     min-height: 100%;
     height: auto;
 
     -webkit-overflow-scrolling: touch;
 }
+
 
 .row {
     margin-left: 0 !important;
@@ -198,8 +199,9 @@ nav {
     display: flex;
     flex-direction: column;
     opacity: 1;
+    overflow: hidden;
     transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: transform 0.4s ease, opacity 1s ease-out, box-shadow 0.4s ease;
     justify-content: space-between;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13), 0 3px 10px 0 rgba(0, 0, 0, 0.123);
 }
@@ -221,8 +223,10 @@ nav {
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.6s ease;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    transform: scale(1.03) translateY(0); /* felnagyul kicsit és marad a helyén */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card>img {
@@ -230,6 +234,9 @@ nav {
     height: 280px;
     object-fit: cover;
     display: block;
+    transition: inherit;
+    aspect-ratio: 16/9;
+    flex-shrink: 0;
 }
 
 .card-button {
@@ -290,12 +297,10 @@ nav {
 }
 
 #characterImg {
-    opacity: 0.9;
     transition: 0.6s ease;
     padding: 0;
 }
 #characterImg:hover {
-    opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.6s ease;
 }
@@ -317,6 +322,15 @@ nav {
 .characterInfo:hover {
     background-color: #dfdfdfb7;
     transition: 0.6s ease;
+}
+@media (max-width: 512px) {
+    .characterInfo,
+    #characterID {
+        background-color: #dfdfdfb7;
+    }
+    #characterImg {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 #mrMeeseeksBox {
@@ -384,6 +398,20 @@ nav {
 }
 
 @media (max-width: 991px) {
+    #title {
+        -webkit-text-stroke: 1.5px #081b38;
+        text-shadow: 0 0 6px #7ffe3f, 0 0 6px #7ffe3f, 0 0 6px #7ffe3f;
+    }
+    .heading-title-1 {
+        -webkit-text-stroke: 1.4px #081b38;
+        text-shadow: 0 0 5px #7ffe3f, 0 0 5px #7ffe3f, 0 0 5px #7ffe3f;
+    }
+    .heading-title-2 {
+        -webkit-text-stroke: 1.4px #081b38;
+        text-shadow: 0 0 5px #7ffe3f, 0 0 5px #7ffe3f, 0 0 5px #7ffe3f;
+    }
+}
+@media (max-width: 512px) {
     #title {
         -webkit-text-stroke: 1px #081b38;
         text-shadow: 0 0 6px #7ffe3f, 0 0 6px #7ffe3f, 0 0 6px #7ffe3f;
