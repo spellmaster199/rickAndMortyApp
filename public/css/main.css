@@ -441,4 +441,46 @@ nav {
     transform: translateY(0);
 }
 
+
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #22a2bd;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px 4px #7ffe3f66;
+    font-family: 'text', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
+
+/* megjelenési állapot */
+.custom-alert.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* eltűnési állapot */
+.custom-alert.hide {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+    pointer-events: none;
+}
+
+.custom-alert-text {
+    margin: 0;
+}
+
+
+
+
+
 /* ----------------------------------------------------------------- */
