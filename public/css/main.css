@@ -324,7 +324,6 @@ nav {
     transition: 0.6s ease;
 }
 @media (max-width: 512px) {
-    .characterInfo,
     #characterID {
         background-color: #dfdfdfb7;
     }
