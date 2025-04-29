@@ -18,7 +18,6 @@ fetchLocations(currentPage).then(data => {
     const paginationContainer = document.getElementById("paginationButtons");
     paginationContainer.innerHTML = "";
 
-    // "Előző" gomb mindig megjelenik, de az első oldalon inaktív
     const prevLi = document.createElement("li");
     prevLi.classList.add("page-item");
     if (currentPage === 1) prevLi.classList.add("disabled");
@@ -31,7 +30,6 @@ fetchLocations(currentPage).then(data => {
     prevLi.appendChild(prevLink);
     paginationContainer.appendChild(prevLi);
 
-    // Lapszámozás generálása (3 oldalt mutat egyszerre)
     for (let i = Math.max(1, currentPage - 6); i <= Math.min(totalPages, currentPage + 6); i++) {
         const li = document.createElement("li");
         li.classList.add("page-item");
@@ -46,7 +44,6 @@ fetchLocations(currentPage).then(data => {
         paginationContainer.appendChild(li);
     }
 
-    // "Következő" gomb mindig megjelenik, de az utolsó oldalon inaktív
     const nextLi = document.createElement("li");
     nextLi.classList.add("page-item");
     if (currentPage === totalPages) nextLi.classList.add("disabled");

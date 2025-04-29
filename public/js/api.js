@@ -7,7 +7,7 @@ export async function fetchCharacters(page) {
     return await response.json();
 }
 
-/* Character */
+/* Single character */
 export async function fetchCharacterById(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
     if (!response.ok) {

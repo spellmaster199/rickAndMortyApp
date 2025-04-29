@@ -193,7 +193,6 @@ nav {
 
 .card {
     max-width: 100%;
-    /*max-height: 500px;*/
     height: 100%;
     transition: 0.6s ease;
     display: flex;
@@ -461,14 +460,12 @@ nav {
     pointer-events: none;
 }
 
-/* megjelenési állapot */
 .custom-alert.show {
     opacity: 1;
     transform: translateY(0) scale(1);
     pointer-events: auto;
 }
 
-/* eltűnési állapot */
 .custom-alert.hide {
     opacity: 0;
     transform: translateY(-30px) scale(0.95);
@@ -478,9 +475,6 @@ nav {
 .custom-alert-text {
     margin: 0;
 }
-
-
-
 
 
 /* ----------------------------------------------------------------- */

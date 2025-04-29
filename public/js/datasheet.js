@@ -33,11 +33,11 @@ document.body.innerHTML = "<h3 style='color: red; text-align: center;'>No ID in 
 }
 
 
-// Frissítsük a maxCharacterId értékét az API-ból
+// Maximum ID count
 fetch("https://rickandmortyapi.com/api/character/")
     .then(response => response.json())
     .then(data => {
-        maxCharacterId = data.info.count; // API válaszából kinyerjük az aktuális max ID-t
+        maxCharacterId = data.info.count;
     })
     .catch(error => console.error("Nem sikerült lekérdezni a maximális karakter ID-t:", error));
 
@@ -48,8 +48,8 @@ prevCharacter.addEventListener("click", function () {
     }
 });
 if (id <= 1) {
-    prevCharacter.style.opacity = "0.5"; // Használj "=" jelet!
-    prevCharacter.style.pointerEvents = "none"; // Ezzel kikapcsolhatod a kattintást
+    prevCharacter.style.opacity = "0.5";
+    prevCharacter.style.pointerEvents = "none";
 }
 
 document.getElementById("nextCharacter").addEventListener("click", function () {

@@ -35,7 +35,6 @@ function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const quoteContainer = document.querySelector(".quote-section .container");
 
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </blockquote>
         `;
 
-        // Kis késleltetéssel megjeleníti az idézetet az animációval
         setTimeout(() => {
             quoteContainer.querySelector("blockquote").classList.add("show");
         }, 100);

@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
 
-    // Kártyák megjelenítése görgetésre
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                observer.unobserve(entry.target); // Ne figyeljük tovább, ha már megjelent
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.04 }); // Kisebb küszöbérték a simább animáció érdekében
+    }, { threshold: 0.04 });
 
-    // Az index oldalon levő kártyákhoz hozzáadjuk az animációt
     cards.forEach(card => observer.observe(card));
 
-    // Ha a karakterek oldalán vagyunk, akkor az API-ból betöltött kártyákhoz is hozzáadjuk az animációt
     if (document.body.contains(document.getElementById("cards"))) {
         waitForCharacterCards(observer);
     }
@@ -39,7 +36,6 @@ function setViewportHeight() {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    // Plusz: mindig újraszámoljuk, ha görgetsz is
     window.addEventListener('scroll', () => {
         const vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);

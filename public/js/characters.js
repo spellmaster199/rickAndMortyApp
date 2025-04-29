@@ -18,7 +18,6 @@ fetchCharacters(currentPage).then(data => {
     const paginationContainer = document.getElementById("paginationButtons");
     paginationContainer.innerHTML = "";
 
-    // "Előző" gomb mindig megjelenik, de az első oldalon inaktív
     const prevLi = document.createElement("li");
     prevLi.classList.add("page-item");
     if (currentPage === 1) prevLi.classList.add("disabled");
@@ -31,7 +30,6 @@ fetchCharacters(currentPage).then(data => {
     prevLi.appendChild(prevLink);
     paginationContainer.appendChild(prevLi);
 
-    // Lapszámozás generálása (3 oldalt mutat egyszerre)
     for (let i = Math.max(1, currentPage - 3); i <= Math.min(totalPages, currentPage + 3); i++) {
         const li = document.createElement("li");
         li.classList.add("page-item");
@@ -46,7 +44,6 @@ fetchCharacters(currentPage).then(data => {
         paginationContainer.appendChild(li);
     }
 
-    // "Következő" gomb mindig megjelenik, de az utolsó oldalon inaktív
     const nextLi = document.createElement("li");
     nextLi.classList.add("page-item");
     if (currentPage === totalPages) nextLi.classList.add("disabled");
@@ -60,9 +57,7 @@ fetchCharacters(currentPage).then(data => {
     paginationContainer.appendChild(nextLi);
 
     for (var i = 0; i < data.results.length; i++) {
-        //Elemek letrehozasa
         var col = document.createElement("section");
-        /*col.setAttribute("class", "col-12 col-md-6 col-lg-3 my-3");*/
         col.setAttribute("class", "col-12 col-md-4 col-lg-3 my-3");
         var card = document.createElement("section");
         card.setAttribute("class", "card w-100 h-100");
@@ -96,7 +91,7 @@ fetchCharacters(currentPage).then(data => {
         a.setAttribute("href", "/datasheet.html?id=" + data.results[i].id);
         a.appendChild(document.createTextNode("Find out more »"));
 
-        //Kartya osszerakasa
+        
         li1.appendChild(b1);
         li2.appendChild(b2);
 
@@ -123,59 +118,3 @@ fetchCharacters(currentPage).then(data => {
     console.error("An error occurred while retrieving characters.:", error);
     document.body.innerHTML= "<h3 style='color: red; text-align: center;'>An error occurred while retrieving characters.</h3>";
 });
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-var ah = oldal - 2;
-var fh = oldal + 2;
-
-if (ah <= 1) {
-    ah = 1
-    fh = 5;
-}
-
-if (fh > json.info.pages) {
-    fh = json.info.pages;
-    ah = json.info.pages - 4;
-}
-
-for (var i = ah; i <= fh; i++) {
-
-    var li = document.createElement("li");
-    li.setAttribute("class", "page-item");
-
-    var a = document.createElement("a");
-    a.setAttribute("class", "page-link");
-    a.setAttribute("href", "http://127.0.0.1:5500/src/characters/characters.html?page=" + i);
-    a.appendChild(document.createTextNode(i));
-
-    li.appendChild(a);
-    document.getElementById("lapozoGombok").appendChild(li);
-}
-
-var li = document.createElement("li");
-li.setAttribute("class", "page-item");
-
-var a = document.createElement("a");
-a.setAttribute("class", "page-link");
-a.setAttribute("href", "http://127.0.0.1:5500/src/characters/characters.html?page=" + json.info.pages);
-a.setAttribute("aria-label", "Next");
-
-var span = document.createElement("span");
-span.setAttribute("aria-hidden", "true");
-span.appendChild(document.createTextNode("»"));
-
-a.appendChild(span);
-li.appendChild(a);
-document.getElementById("lapozoGombok").appendChild(li);
-*/
