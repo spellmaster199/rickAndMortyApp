@@ -322,7 +322,7 @@ nav {
     background-color: #dfdfdfb7;
     transition: 0.6s ease;
 }
-@media (max-width: 512px) {
+@media (max-width: 576px) {
     #characterID {
         background-color: #dfdfdfb7;
     }
@@ -344,6 +344,15 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 576px) {
+    #mrMeeseeksBox {
+        width: 60%;
+        max-width: 200px;
+    }
+}
+
 
 /* ----------------------------------------------------------------- */
 
