@@ -348,8 +348,10 @@ nav {
 
 @media (max-width: 576px) {
     #mrMeeseeksBox {
-        width: 60%;
-        max-width: 200px;
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 }
 
