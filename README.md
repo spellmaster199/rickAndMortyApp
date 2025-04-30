@@ -2,8 +2,6 @@
 
 [➡️ Live Demo](https://rickandmortyapp-beta.vercel.app/)
 
-⚠ ATTENTION: This project is under development, not yet the final version!
-
 This is a web application that allows users to browse through characters, locations, and episodes of the popular *Rick and Morty* series.
 
 The project uses the Rick and Morty API to retrieve data and dynamically display it in the user interface. The application design is based on the Bootstrap 5 framework.
