@@ -41,5 +41,3 @@ function setViewportHeight() {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     }, { passive: true });
 }
-
-  

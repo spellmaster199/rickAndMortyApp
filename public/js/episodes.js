@@ -152,8 +152,45 @@ const renderPagination = (totalPages, currentPage) => {
 
 
 //*** CONTENT ***/
-// Render episode rows in the table
+// Render episode rows in the table 
 const renderEpisodes = results => {
+  const tbody = document.querySelector("#trunk");
+  tbody.innerHTML = "";
+
+  results.forEach(({ id, name, air_date, episode, characters, created }) => {
+    const tr = document.createElement("tr");
+
+    const td1 = document.createElement("td");
+    td1.appendChild(document.createTextNode(id));
+
+    const td2 = document.createElement("td");
+    td2.appendChild(document.createTextNode(name));
+
+    const td3 = document.createElement("td");
+    td3.appendChild(document.createTextNode(air_date));
+
+    const td4 = document.createElement("td");
+    td4.appendChild(document.createTextNode(episode));
+
+    const td5 = document.createElement("td");
+    td5.appendChild(document.createTextNode(characters.length));
+
+    const td6 = document.createElement("td");
+    td6.appendChild(document.createTextNode(created));
+
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    tr.appendChild(td5);
+    tr.appendChild(td6);
+
+    tbody.appendChild(tr);
+  });
+};
+
+// Render episode rows in the table
+/*const renderEpisodes = results => {
   const tbody = document.querySelector("#trunk");
   tbody.innerHTML = "";
 
@@ -168,7 +205,7 @@ const renderEpisodes = results => {
       `<td>${created}</td>`;
     tbody.appendChild(tr);
   });
-};
+};*/
 //***/
 
 
