@@ -207,9 +207,9 @@ const renderCharacters = characters => {
     const cardBody = document.createElement("section");
     cardBody.className = "card-body";
 
-    const h5 = document.createElement("h5");
-    h5.className = "card-title";
-    h5.textContent = `${id} | ${name}`;
+    const h4 = document.createElement("h4");
+    h4.className = "card-title";
+    h4.textContent = `${id} | ${name}`;
 
     const ul = document.createElement("ul");
 
@@ -233,7 +233,7 @@ const renderCharacters = characters => {
     btn.href = `/datasheet.html?id=${id}`;
     btn.textContent = "Find out more »";
 
-    cardBody.appendChild(h5);
+    cardBody.appendChild(h4);
     cardBody.appendChild(ul);
     cardBody.appendChild(btn);
 
